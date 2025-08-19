@@ -1,0 +1,62 @@
+#card {
+    min-height: 30vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    margin: 10px;
+    border-radius: 10px 10px;
+    padding: 15px;
+    border: 2px solid #282828;
+}
+
+#card:hover {
+    background-image: radial-gradient(circle 200px at var(--x) var(--y), rgba(98, 98, 98, 0.205), transparent 100%);
+    border: 3px solid, #282828;
+    border-image-source: radial-gradient(circle 200px at var(--x) var(--y), #ff6200, #282828);
+    border-image-slice: 1;
+}
+
+#learn_more {
+    display: none;
+}
+
+#card_title {
+    font-size: 30px;
+}
+
+#card_content {
+    color: #a1a1a1;
+    max-height: 5vh;
+    width: 19vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#card_content *{
+    font-size: small;
+}
+
+#card_writer {
+    color: #a1a1a1;
+}
+#card_content * {
+  color: inherit !important;
+  
+}
+#card:hover #card_title {
+    font-size: 25px;
+    transition: font-size 0.3s ease;
+}
+
+#card:hover #learn_more {
+    display: block;
+    transition: display 0.5s ease;
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+#learn_more:hover {
+    cursor: pointer;
+}

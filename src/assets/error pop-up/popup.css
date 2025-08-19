@@ -1,0 +1,57 @@
+#main_bg {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: self-end;
+    overflow: hidden;
+}
+
+#bg {
+    height: 100vh;
+    filter: blur(10px);
+    background: transparent;
+}
+
+#sheet {
+    margin: 2vh;
+    border: 2px solid #282828;
+    height: 21.8rem;
+    width: 25rem;
+    padding: 10px;
+    border-radius: 10px 10px;
+    position: relative;
+    background-color: #0A0A0A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+#statement{
+    color:#a1a1a1;
+}
+#grab {
+    height: 6px;
+    width: 80px;
+    background: #4a4848;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+}
+
+#grab:hover {
+    cursor: grab;
+}
+
+#statement {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#button_popup {
+    margin-top: 10px;
+}

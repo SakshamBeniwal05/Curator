@@ -1,0 +1,61 @@
+* {
+    background-color: transparent;
+}
+
+body {
+    background-color: #0A0A0A;
+
+}
+
+#parent {
+    border: 2px solid #282828;
+    height: 420px;
+    width: 25rem;
+    padding: 10px;
+    border-radius: 10px 10px;
+}
+
+span {
+    color: #a1a1a1;
+}
+
+
+#parent:hover {
+    background-image: radial-gradient(circle 200px at var(--x) var(--y), rgba(98, 98, 98, 0.205), transparent 100%);
+    border: 3px solid, #282828;
+    border-radius: 10px 10px;
+    border-image-source: radial-gradient(circle 200px at var(--x) var(--y), #ff6200, #282828);
+    border-image-slice: 1;
+}
+
+.line {
+    margin-top: 30px;
+    height: 0.5px;
+    background-color: #282828;
+}
+
+main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.butt-login {
+    margin-top: 10px;
+}
+
+.foot_sign_up {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 5px;
+    color: #a1a1a1;
+}
+
+#Login_signup {
+    text-decoration: none;
+
+}

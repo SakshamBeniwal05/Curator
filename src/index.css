@@ -1,0 +1,12 @@
+* {
+  background-color: #0A0A0A;
+  color: white;
+  font-family: "Funnel Display", sans-serif;
+}
+
+body{
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}

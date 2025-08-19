@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label{
+    font-weight: 500;
+    font-size: medium;
+}
+
+input {
+  height: 1.5rem;
+  width: 20rem;
+  background: #0d0d0d;
+  border: 2px solid #1e1e1e;
+  color: white;
+  padding: 5px 10px;
+  outline: none;
+  transition: box-shadow 0.2s ease, border 0.2s ease;
+  font-size: medium;
+  border-radius: 5px 5px;
+}
+
+input:focus {
+  box-shadow: 0 0 5px 5px #515151;
+}

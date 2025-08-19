@@ -1,0 +1,20 @@
+#post_post {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #282828;
+    border-radius: 10px 10px;
+}
+
+#Post_title {
+    font-size: 40px;
+}
+
+#Post_writer {
+    font-size: 20px;
+    color: #a1a1a1;
+}

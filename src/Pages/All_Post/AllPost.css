@@ -1,0 +1,48 @@
+body {
+  min-height: 100vh; 
+  height: auto; 
+}
+
+#card_body {
+    width: 90vw;
+    min-height: 80vh;
+    max-height: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#all_post_text {
+    font-size: 70px;
+    color: #a1a1a1;
+}
+
+#allPosts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 20px;
+}
+
+#tagline {
+    width: 40vw;
+    text-align: center;
+    font-size: 50px;
+}
+#posts{
+    position: relative;
+}
+
+#none{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#back{
+    position: fixed;
+    z-index: 10;
+}

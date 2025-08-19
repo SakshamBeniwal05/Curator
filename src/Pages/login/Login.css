@@ -1,0 +1,63 @@
+* {
+    background-color: transparent;
+}
+body{
+    height: 100vh;
+}
+span {
+    color: #a1a1a1;
+}
+
+
+#login-form {
+    border: 2px solid #282828;
+    height: 340px;
+    width: 25rem;
+    padding: 10px;
+    border-radius: 10px 10px;
+}   
+
+#login-form:hover {
+    background-image: radial-gradient(circle 200px at var(--x) var(--y), rgba(98, 98, 98, 0.205), transparent 100%);
+    border: 3px solid, #282828;
+    border-image-source: radial-gradient(circle 200px at var(--x) var(--y), #ff6200, #282828);
+    border-image-slice: 1;
+}
+
+.form-divider {
+    margin-top: 30px;
+    height: 0.5px;
+    background-color: #282828;
+}
+
+main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.foot_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 5px;
+    color: #a1a1a1;
+}
+
+#signup_login {
+    text-decoration: none;
+}
+
+#error_appear_zone{
+    position: fixed;
+    bottom: 0;
+    right: 35%;
+    z-index: 1000;
+}
