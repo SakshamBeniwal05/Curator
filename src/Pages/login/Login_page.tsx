@@ -48,6 +48,8 @@ const Login_page: React.FC = () => {
         navigate('/')
         window.localStorage.setItem("user", JSON.stringify(userdata));
         window.localStorage.setItem("session", JSON.stringify(session));
+        console.log(userdata);
+        
       }
     }
     else {
