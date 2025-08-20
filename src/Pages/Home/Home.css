@@ -18,13 +18,13 @@
     background: #ff6200;
     position: relative;
 
-    -webkit-mask-image: url('src/Images/Ellipse 1.svg');
+    -webkit-mask-image: url('src/Images/Ellipse.svg');
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: var(--main_position-x) var(--main_position-y);
     -webkit-mask-size: var(--mask_size);
     -webkit-transition: -webkit-mask-size 0.3s ease;
 
-    mask-image: url('src/Images/Ellipse 1.svg');
+    mask-image: url('src/Images/Ellipse.svg');
     mask-repeat: no-repeat;
     mask-position: var(--main_position-x) var(--main_position-y);
     mask-size: var(--mask_size);
