@@ -11,18 +11,15 @@ const App: React.FC = () => {
   useEffect(() => {
     const restoreSession = async () => {
       try {
-        // if you stored raw user in localStorage
-        const storedUser = localStorage.getItem('user')
-        if (storedUser) {
-          dispatch(Login({ data: JSON.parse(storedUser) }))
-          return
-        }
-
-        // safer: call Appwrite to verify session
+        // Always check Appwrite first to verify if session is still valid
         const userdata = await AuthServices.Current_User()
         if (userdata && !userdata?.code) {
+          // Valid session confirmed by Appwrite, store and dispatch login
           localStorage.setItem('user', JSON.stringify(userdata))
           dispatch(Login({ data: userdata }))
+        } else {
+          // No valid session from Appwrite, no dispatch
+          console.log('No valid user session found')
         }
       } catch (err) {
         console.error('Session restore failed:', err)
