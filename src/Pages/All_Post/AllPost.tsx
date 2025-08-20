@@ -15,15 +15,27 @@ interface Post {
 
 const AllPost: React.FC = () => {
   const [posts, setPosts] = React.useState<Post[]>([])
+  const [loader, setLoader] = React.useState<boolean>(true)
 
   React.useEffect(() => {
     DocumentServices.gets().then((res: any) => {
       if (res && res.documents) {
         setPosts(res.documents)
+        setLoader(false)
         console.log(posts);
       }
     })
   }, [])
+
+  if (loader) {
+    return (
+      <div id="allpos_body">
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh', fontSize: '1.2rem' }}>
+          Loading...
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div id="allpos_body">
